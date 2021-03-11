@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+
+.home .container_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.home ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #112368;
+  margin: 0px 20px;
+  border: 4px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: relative;
+}
+
+.home li a:hover {
+  border-bottom: 4px solid #112368;
+}
+
+.home .logo {
+  width: 200px;
+}
+
+.home .logo img {
+  width: 100%;
+}
+
+.home .bold {
+  font-weight: 700;
+}
+
+.home .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.home .hero .novidades {
+  width: 50%;
+  background: linear-gradient(45deg, #adecee, #d3e2f0);
+  padding: 80px;
+  color: #112368;
+}
+
+.home .hero .novidades h2 {
+  font-size: 3rem;
+  line-height: 50px;
+}
+
+.home .hero .novidades p {
+  line-height: 30px;
+  margin-top: 100px;
+}
+
+.home .hero .novidades .botao {
+  margin-top: 50px;
+}
+
+.home .hero .novidades a {
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home .hero .novidades a:hover {
+  background-color: #112368;
+  color: #fff;
+}
+
+.home .hero .novidades a:hover svg path {
+  fill: #fff;
+  color: #fff;
+}
+
+.home .hero .novidades a svg {
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.home .hero .doencas_reumaticas {
+  width: 50%;
+  padding: 80px;
+  color: #112368;
+}
+
+.home .hero .doencas_reumaticas h2 {
+  font-size: 3rem;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.home .hero .doencas_reumaticas p {
+  line-height: 30px;
+}
+
+.home .hero .doencas_reumaticas .nomes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.home .sobre {
+  background: url("./img/background2.png");
+  height: 100vh;
+  background-size: cover;
+  color: #112368;
+}
+
+.home .sobre .title {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home .sobre .title h2 {
+  font-weight: 700;
+  color: #112368;
+  font-size: 2rem;
+  background: #fff;
+  padding: 10px;
+  display: inline;
+  border-radius: 50px;
+  padding: 10px 80px;
+}
+
+.home .sobre .container {
+  padding: 50px;
+}
+
+.home .sobre .text_sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .sobre .text_sobre p {
+  width: 40%;
+  line-height: 30px;
+}
+
+.home .sobre .nossaEquipe {
+  margin-top: 100px;
+}
+
+.home .sobre .destaque_equipe {
+  color: #112368;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  line-height: 30px;
+}
+
+.home .servicos .title {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home .servicos .title h2 {
+  font-weight: 700;
+  color: #112368;
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#adecee), to(#d3e2f0));
+  background: linear-gradient(to bottom, #adecee, #d3e2f0);
+  display: inline;
+  border-radius: 50px;
+  padding: 10px 200px;
+}
+
+.home .servicos .container_servicos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.home .servicos .container_servicos .card {
+  color: #112368;
+  width: 250px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 20px;
+}
+
+.home .servicos .container_servicos .card:hover {
+  background: #adecee;
+}
+
+.home .servicos .container_servicos .card h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.home .servicos .container_servicos .card p {
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.home .servicos .container_servicos .card button {
+  background: none;
+  border: none;
+  margin-top: 20px;
+}
+
+.home .servicos .container_servicos .card a {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#adecee), to(#d3e2f0));
+  background: linear-gradient(to bottom, #adecee, #d3e2f0);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.home .servicos .container_servicos .card img {
+  width: 80px;
+}
+
+.home .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  color: #112368;
+}
+
+.home .forms h2 {
+  font-weight: 700;
+  color: #112368;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.home .forms .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.home .forms p {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.home .forms iframe {
+  width: 80%;
+}
+
+.home footer {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home footer .logo {
+  width: auto;
+  width: 500px;
+  text-align: center;
+}
+
+.home footer .logo p {
+  color: #112368;
+}
+
+.home footer .logo img {
+  width: 50%;
+}
+
+.home footer .container_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  color: #112368;
+}
+
+.home footer .container_footer p, .home footer .container_footer span {
+  margin-bottom: 10px;
+}
+
+.home footer .container_footer h2 {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

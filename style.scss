@@ -1,0 +1,346 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+*{
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    scroll-behavior: smooth
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.home{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    .container_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    ul{
+        display: flex;
+    }
+    li a{
+        text-decoration: none;
+        font-weight: 700;
+        color: #112368; 
+        margin: 0px 20px;
+        border: 4px solid transparent;
+        transition: .2s;
+        position: relative;
+        &:hover{
+            border-bottom: 4px solid #112368;
+        }
+    }
+    .logo{
+        img{
+            width: 100%;
+        }
+        width: 200px;
+    }
+
+
+
+
+.bold{
+    font-weight: 700;
+}
+    .hero{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        margin-top: 50px;
+        .novidades{
+            width:50%;
+            background: linear-gradient(45deg, #adecee, #d3e2f0);
+            padding: 80px;  
+            color: #112368;
+
+            h2{
+                font-size: 3rem;
+                line-height: 50px;
+            }
+            p{
+                line-height: 30px;
+                margin-top: 100px;
+            }
+                .botao{
+                    margin-top: 50px;
+                }
+                a{
+                    background-color: #fff;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    padding: 15px 30px;
+                    font-weight: 600;
+
+                    display: flex;
+                    align-items: center;
+                    width: 230px; position: relative;
+
+                    transition: .3s;
+
+                    &:hover{
+                        background-color: #112368;
+                        color: #fff;
+                        
+                        svg path{
+                            fill: #fff;
+                            color: #fff;
+                        }
+                    }
+                    svg{
+                        position: absolute;
+                        right: 20px;
+                        margin-left: 10px;
+                        width: 20px;
+                        height:20px;
+                    }
+
+                }
+        }
+        .doencas_reumaticas{
+            width: 50%;
+            padding: 80px;
+            color: #112368;
+
+            h2{
+                font-size: 3rem;
+                line-height: 50px;
+                margin-bottom: 50px;
+            }
+            p{
+                line-height: 30px;
+            }
+            .nomes{
+                display: flex;
+                width: 250px;
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .sobre{
+        background: url("./img/background2.png");
+        height: 100vh;
+        background-size: cover;
+
+        .title{
+            text-align: center;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        .title h2{
+            font-weight: 700;
+            color: #112368;
+            font-size: 2rem;
+            background: #fff;
+            padding: 10px;
+            display: inline;
+            border-radius: 50px;
+
+            padding: 10px 80px;
+        }
+
+        color: #112368;
+
+        .container{
+            padding: 50px;
+        }
+
+        .text_sobre{
+            display: flex;
+            justify-content: space-between;
+            p{
+                width: 40%;
+                line-height: 30px;
+            }
+        }
+        .nossaEquipe{
+            margin-top: 100px;
+        }
+        .destaque_equipe{
+            color: #112368;
+            background: #fff;
+            padding: 10px;
+            border-radius: 50px;
+            text-align: center;
+            width:60%;
+            margin: auto;
+            line-height: 30px;
+        }
+    }
+
+
+    .servicos{
+
+        .title{
+            text-align: center;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        .title h2{
+            font-weight: 700;
+            color: #112368;
+            font-size: 2rem;
+            background: linear-gradient(to bottom, #adecee, #d3e2f0);
+            display: inline;
+            border-radius: 50px;
+
+            padding: 10px 200px;
+        }
+        .container_servicos{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            .card{
+                color: #112368;
+                width: 250px;
+                text-align: center;
+    
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                justify-content: space-between;
+                transition: .3s;
+                padding: 20px;
+                &:hover{
+                    background: #adecee;
+                }
+                h2{
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: .9rem;
+                    margin-bottom: 20px;
+                }
+                button{
+                    background: none;
+                    border: none;
+                    margin-top: 20px;
+                }
+                a{
+                    margin: 0;
+                    background: linear-gradient(to bottom, #adecee, #d3e2f0);
+                    padding: 10px 20px;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+    
+                img{
+                    width:80px;
+                }
+            }
+        }
+
+    }
+    .forms{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        h2{
+            font-weight: 700;
+            color: #112368;
+            font-size: 2rem;
+            text-align: center;
+            width: 80%;        
+            margin: auto;
+    }
+        .imgs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        color: #112368;
+
+        p{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        iframe{
+            width: 80%;
+        }
+}
+footer{
+    padding: 50px;
+    .logo{
+        width: auto;
+        width: 500px;
+        text-align: center;
+        p{
+            color: #112368;
+        }
+        img{
+            width: 50%;
+        }
+    }
+    display: flex;
+    justify-content: space-between;
+    .container_footer{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        color: #112368;
+
+        p,span{
+            margin-bottom: 10px;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+}
